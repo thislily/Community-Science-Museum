@@ -283,6 +283,7 @@ td {
   flex-direction: column;
 }
 
+
 .bit {
   margin-bottom: 20px;
 }
@@ -383,7 +384,7 @@ footer {
 }
 .socials-mini {
   width: 162px;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .socials-mini div {
@@ -559,11 +560,18 @@ footer {
   margin: 0px;
 }
 
-/* buy tickets */
+/* full bars */
 
 .save-15 p {
   font-size: var(--fs-h2);
   margin: 0px 40px 20px;
+}
+
+.young-person-looking p {
+  font-size: var(--fs-body-extra);
+  max-width: 700px;
+  text-align: center;
+  margin: 0px;
 }
 
 /* CARDS */
@@ -602,15 +610,34 @@ footer {
   flex-direction: row;
 }
 
-.med-card img {
+.med-card img,
+.big-card img {
   object-fit: cover;
 }
 
-.med-card-text {
+.med-card-text,
+.big-card-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
+  padding: 20px;
+}
+
+.big-card-text{
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.big-card-text h3{
+  min-width: 22%;
+}
+
+.big-card{
+  width: 1132px;
+  margin: 0px auto;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
 }
 
 .flex-reverse {
@@ -659,17 +686,33 @@ footer {
   flex-direction: row;
   align-items: start;
   justify-content: end;
+  max-width: 540px;
 }
 
-.visit-us-box {
+.explore-arrow-down {
+  padding-top: 42px;
+}
+
+.visit-us-box,
+.for-kids-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 385px;
-  height: 212px;
   background-position: center;
   background-size: cover;
+}
+
+.visit-us-box {
+  width: 385px;
+  height: 212px;
   background-image: url(/images/visit-images/visit-blob.svg);
+}
+
+.for-kids-box {
+  width: 448px;
+  height: 228px;
+  background-image: url(/images/explore-images/for-kids-blob.svg);
+  margin-right: 20px;
 }
 
 .address-box {
@@ -815,6 +858,14 @@ footer {
   }
 
   .med-card {
+    width: 820px;
+  }
+
+  .med-card img{
+    max-width: 535px;
+  }
+
+  .big-card{
     width: 820px;
   }
 
@@ -971,19 +1022,18 @@ footer {
     width: 126px;
     right: 12px;
     top: 12px;
-    
   }
 
-  .open-today p{
+  .open-today p {
     font-size: var(--fs-body-mobile);
   }
 
   .button-top,
-  .open-today h3{
-    font-size: var(--fs-body-mobile):
+  .open-today h3 {
+    font-size: var(--fs-body-mobile);
   }
 
-  .button-top{
+  .button-top {
     margin-bottom: 10px;
   }
 
@@ -1046,11 +1096,25 @@ footer {
     width: 100%;
     max-width: 600px;
     padding: 0px;
+    margin-bottom: 40px;
   }
 
-  .med-card img {
+  .med-card img,
+  .big-card img {
+    max-width: 600px;
     max-height: 400px;
   }
+
+  .big-card{
+    width: 100%;
+    min-width: 600px;
+    margin: 0px auto 40px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
 
   .med-card-text {
     margin: 0px;
