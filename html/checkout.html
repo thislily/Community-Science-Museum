@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Looking for tickets? The Community Science Museum is a fun and interactive place for young people to learn about science! Come join us for a day of experiments, exploration and excitement! We have been an important resource for the community for over 30 years, and we will remain focused on serving our local youth going forward."
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&family=Urbanist:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Buy Tickets | Community Science Museum</title>
+  </head>
+  <body>
+    <header class="light-blue">
+      <a href="/index.html" class="home-link">
+        <img
+          class="logo"
+          src="/images/logos+icons/csm-logo.svg"
+          alt=" CSM Logo"
+        />
+      </a>
+
+      <label class="menu-icon" for="checkbox">
+        <img src="/images/logos+icons/menu-icon.svg" alt="" />
+      </label>
+      <input type="checkbox" id="checkbox" />
+      <nav>
+        <a class="turn-yellow hover-underline" href="visit.html">Visit</a>
+        <a class="turn-blue hover-underline" href="explore.html">Explore</a>
+        <a class="turn-green hover-underline" href="exhibitions.html"
+          >Exhibitions</a
+        >
+        <a class="turn-purple hover-underline" href="special-events.html"
+          >Special Events</a
+        >
+        <a
+          class="turn-orange hover-underline hide-tickets current-page"
+          href="checkout.html"
+          >Tickets</a
+        >
+      </nav>
+    </header>
+    <!--content begins-->
+
+    <main class="light-orange">
+      <a class="open-today dark-orange" href="visit.html">
+        <h3>Open today</h3>
+        <p>9:00 - 18:00</p>
+      </a>
+
+      <h1>Purchase Tickets</h1>
+
+      <section class="checkout">
+        <div class="tiny-card white">
+          <h2 class="same-as-h3">1. Select Tickets</h2>
+          <p>Save 15% by booking now!</p>
+          <table>
+            <tr>
+              <td>Under 2</td>
+              <td>Free!</td>
+              <td>
+                <div class="quantity-box">
+                  <label for="under-2-quantity">Qty: </label>
+                  <input
+                    type="number"
+                    id="under-2-quantity"
+                    name="under-2-quantity"
+                    min="1"
+                    max="20"
+                    value="0"
+                  />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Child (3-12)</td>
+              <td><span class="former-price">$12</span> $10.20</td>
+              <td>
+                <div class="quantity-box">
+                  <label for="child-quantity">Qty: </label>
+                  <input
+                    type="number"
+                    id="child-quantity"
+                    name="child-quantity"
+                    min="1"
+                    max="20"
+                    value="1"
+                  />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Youth (13-18)</td>
+              <td><span class="former-price">$15</span> $12.75</td>
+              <td>
+                <div class="quantity-box">
+                  <label for="youth-quantity">Qty: </label>
+                  <input
+                    type="number"
+                    id="youth-quantity"
+                    name="youth-quantity"
+                    min="1"
+                    max="20"
+                    value="1"
+                  />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Adult (19+)</td>
+              <td><span class="former-price">$20</span> $17.00</td>
+              <td>
+                <div class="quantity-box">
+                  <label for="adult-quantity">Qty: </label>
+                  <input
+                    type="number"
+                    id="adult-quantity"
+                    name="adult-quantity"
+                    min="1"
+                    max="20"
+                    value="1"
+                  />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Family (2 adult + 2 child or youth)</td>
+              <td><span class="former-price">$50</span> $42.50</td>
+              <td>
+                <div class="quantity-box">
+                  <label for="family-quantity">Qty: </label>
+                  <input
+                    type="number"
+                    id="family-quantity"
+                    name="family-quantity"
+                    min="1"
+                    max="20"
+                    value="0"
+                  />
+                </div>
+              </td>
+            </tr>
+          </table>
+          <span class="spacing-line-checkout"></span>
+          <p>
+            <span class="bold">Total Price:</span>
+            <span id="total price"
+              ><span class="former-price">$47</span> $39.95</span
+            >
+          </p>
+          <p>
+            * Tickets are digital, you will receive a scannable ticket via email
+            upon purchase.
+          </p>
+          <a class="button med-blue" href="">Next</a>
+        </div>
+      </section>
+
+      <section class="full-bar med-blue go-to-field-trips">
+        <div class="go-to-field-trips-text">
+          <h3>Looking for information about field trips for your class?</h3>
+          <p>
+            Field trips not only complement classroom teachings but also promote
+            critical thinking, teamwork, and a sense of wonder as students delve
+            into the captivating world of science in a dynamic and immersive
+            environment.
+          </p>
+          <a class="button med-yellow" href="visit.html"
+            >Field Trip Information</a
+          >
+        </div>
+        <img
+          src="/images/checkout-images/looking-for.png"
+          alt="Children wearing sun hats and backpacks."
+        />
+      </section>
+
+      <section class="checkout">
+        <div class="tiny-card white">
+          <h2 class="same-as-h3">2. Personal Information</h2>
+          <p>* All fields must be completed</p>
+          <form>
+            <label for="first-name">* First Name</label>
+            <input type="text" id="first-name" name="first-name" />
+            <label for="last-name">* Last Name</label>
+            <input type="text" id="last-name" name="last-name" />
+            <label for="email">* Email Address</label>
+            <input type="email" name="email" id="email" />
+
+            <label for="telephone">Telephone</label>
+            <input
+              type="tel"
+              id="telephone"
+              name="telephone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            />
+            <label for="address">* Street address</label>
+            <input type="text" name="address" id="address" />
+            <div class="city-and-postal">
+              <div class="city">
+                <label for="city">* City</label>
+                <input type="text" name="city" id="city" />
+              </div>
+              <div class="postal">
+                <label for="postal">* Postal code</label>
+                <input type="text" name="postal" id="postal" />
+              </div>
+            </div>
+          </form>
+          <a class="button med-blue" href="">Next</a>
+        </div>
+
+        <div class="tiny-card white">
+          <h2 class="same-as-h3">3. Payment Options</h2>
+          <div class="payment-options-available">
+            <div class="radio-box selected">
+              <input
+                type="radio"
+                id="pay-with-card"
+                name="payment-option"
+                value="pay-with-card"
+              />
+              <label for="pay-with-card">
+                <img
+                  src="/images/logos+icons/cards.svg"
+                  alt="credit card icons"
+                />
+                <p>Pay with card</p>
+                <img
+                  src="/images/logos+icons/checkmark-circle.svg"
+                  alt="checkmark icon"
+                />
+              </label>
+            </div>
+
+            <div class="radio-box">
+              <input
+                type="radio"
+                id="pay-with-paypal"
+                name="payment-option"
+                value="pay-with-paypal"
+              />
+              <label for="pay-with-paypal"
+                ><img
+                  src="/images/logos+icons/paypal.svg"
+                  alt="paypal logo icon"
+                />
+                <p>Pay with Paypal</p>
+                <img
+                  src="/images/logos+icons/checkmark-circle.svg"
+                  alt="checkmark icon"
+                />
+              </label>
+            </div>
+
+            <div class="radio-box">
+              <input
+                type="radio"
+                id="pay-with-applepay"
+                name="payment-option"
+                value="pay-with-applepay"
+              />
+              <label for="pay-with-applepay"
+                ><img
+                  src="/images/logos+icons/apple-pay.svg"
+                  alt="applepay logo icon"
+                />
+                <p>Pay with ApplePay</p>
+                <img
+                  src="/images/logos+icons/checkmark-circle.svg"
+                  alt="checkmark icon"
+                />
+              </label>
+            </div>
+          </div>
+          <a class="big-button dark-blue" href="successful-checkout.html"
+            >Buy Tickets</a
+          >
+          <p class="small-text">
+            * By signing up or placing an order you are consenting to our
+            privacy policy
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!--content ends-->
+
+    <footer class="light-blue">
+      <div class="socials-mini row wrap">
+        <div>
+          <a href="https://www.tiktok.com/foryou"
+            ><img src="/images/logos+icons/tiktok.svg" alt="tik tok logo"
+          /></a>
+          <a href="https://www.instagram.com"
+            ><img src="/images/logos+icons/instagram.svg" alt="instagram logo"
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.facebook.com"
+            ><img src="/images/logos+icons/facebook.svg" alt="facebook logo"
+          /></a>
+          <a href="https://www.youtube.com"
+            ><img src="/images/logos+icons/youtube.svg" alt="youtube logo"
+          /></a>
+        </div>
+      </div>
+
+      <div class="footer-text">
+        <p class="small-text">Supported by the Local Government</p>
+        <p class="small-text">Copyright Community Science Museum</p>
+      </div>
+
+      <a class="med-blue contact-button" href="visit.html">Contact us</a>
+    </footer>
+  </body>
+</html>
