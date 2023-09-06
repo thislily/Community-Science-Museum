@@ -283,7 +283,6 @@ td {
   flex-direction: column;
 }
 
-
 .bit {
   margin-bottom: 20px;
 }
@@ -572,6 +571,7 @@ footer {
   max-width: 700px;
   text-align: center;
   margin: 0px;
+  padding: 0px 20px;
 }
 
 /* CARDS */
@@ -623,16 +623,16 @@ footer {
   padding: 20px;
 }
 
-.big-card-text{
+.big-card-text {
   flex-direction: row;
   align-items: flex-start;
 }
 
-.big-card-text h3{
+.big-card-text h3 {
   min-width: 22%;
 }
 
-.big-card{
+.big-card {
   width: 1132px;
   margin: 0px auto;
   padding: 18px;
@@ -664,15 +664,26 @@ footer {
   gap: 40px;
 }
 
-.field-trips-box {
+.field-trips-box,
+.for-adults-box {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.field-trips-box {
+  background-image: url(/images/visit-images/field-trips-blob.svg);
   width: 474px;
   height: 235px;
-  background-position: center;
-  background-size: cover;
-  background-image: url(/images/visit-images/field-trips-blob.svg);
+}
+
+.for-adults-box {
+  background-image: url(/images/explore-images/for-adults-blob.svg);
+  width: 448px;
+  height: 238px;
 }
 
 .visitor-info {
@@ -699,7 +710,8 @@ footer {
   align-items: center;
   justify-content: center;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .visit-us-box {
@@ -861,11 +873,11 @@ footer {
     width: 820px;
   }
 
-  .med-card img{
+  .med-card img {
     max-width: 535px;
   }
 
-  .big-card{
+  .big-card {
     width: 820px;
   }
 
@@ -914,6 +926,11 @@ footer {
   .same-as-h3 {
     margin: 12px;
     font-size: var(--fs-body-extra);
+  }
+
+  .sign-up h2{
+    margin: 0px;
+    font-size: var(--fs-h3);
   }
 
   .link-style {
@@ -972,10 +989,6 @@ footer {
     border-bottom: 2px solid var(--clr-black);
   }
 
-  input[type="checkbox"]:checked ~ .rotate-icon {
-    transform: rotate(90deg);
-  }
-
   nav {
     position: absolute;
     left: 0px;
@@ -1017,6 +1030,86 @@ footer {
 }
 
 @media screen and (max-width: 840px) {
+  /* join the squad */
+
+  .join-the-squad {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .join-the-squad-text {
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .join-the-squad h2 {
+    text-align: center;
+    max-width: 350px;
+  }
+
+  .join-the-squad img {
+    width: 100%;
+    padding: 0px;
+  }
+
+  /* want more */
+
+  .want-more h2 {
+    text-align: center;
+  }
+
+  .social-display {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0px;
+  }
+
+  .social-display div {
+    gap: 20px;
+  }
+
+  .social-box {
+    width: 160px;
+    height: 160px;
+  }
+
+  .social-box img {
+    width: 64px;
+  }
+
+  /* sign up */
+
+.sign-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding:40px;
+}
+
+.sign-up div {
+  max-width: 500px;
+  padding: 0px;
+  line-height: 40px;
+}
+
+.sign-up h2{
+  margin: 0px;
+  font-size: var(--fs-h3);
+}
+
+.sign-up form {
+  padding: 40px 20px;
+  gap: 20px;
+  justify-content: center;
+  align-items: start;
+}
+
+
   .open-today {
     height: 84px;
     width: 126px;
@@ -1065,8 +1158,20 @@ footer {
     height: 110px;
   }
 
+  .for-adults-box {
+    width: 241px;
+    height: 122px;
+  }
+
+  .for-kids-box {
+    width: 247px;
+    height: 129px;
+    margin: 0px 20% 0px 0px;
+  }
+
   .info-down {
-    padding-top: 18px;
+    padding: 18px 20px 0px;
+    max-width: 80%;
   }
 
   .info-down img {
@@ -1074,10 +1179,9 @@ footer {
     width: 35px;
   }
 
-  h3,
-  .button,
-  .same-as-h3 {
-    font-size: var(--fs-body);
+  .sign-up h2{
+    margin: 0px;
+    font-size: var(--fs-h3);
   }
 
   .save-15 p {
@@ -1101,20 +1205,29 @@ footer {
 
   .med-card img,
   .big-card img {
+    width: 100%;
     max-width: 600px;
     max-height: 400px;
+    object-fit: cover;
   }
 
-  .big-card{
+  .big-card {
     width: 100%;
-    min-width: 600px;
+    max-width: 600px;
     margin: 0px auto 40px;
-    padding: 18px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
   }
+  .big-card-text {
+    flex-direction: column;
+    width: auto;
+  }
 
-
+  .big-card-text h3 {
+    min-width: none;
+    width: auto;
+  }
 
   .med-card-text {
     margin: 0px;
