@@ -18,33 +18,37 @@
   </head>
   <body>
     <header class="light-red">
-      <a href="/index.html" class="home-link">
-        <img
-          class="logo"
-          src="/images/logos+icons/csm-logo.svg"
-          alt=" CSM Logo"
-        />
-      </a>
+      <div class="max-width">
+        <a href="/index.html" class="home-link">
+          <img
+            class="logo"
+            src="/images/logos+icons/csm-logo.svg"
+            alt=" CSM Logo"
+          />
+        </a>
 
-      <label class="menu-icon" for="checkbox">
-        <img src="/images/logos+icons/menu-icon.svg" alt="" />
-      </label>
-      <input type="checkbox" id="checkbox" />
-      <nav>
-        <a class="turn-yellow hover-underline" href="visit.html">Visit</a>
-        <a class="turn-blue hover-underline" href="explore.html">Explore</a>
-        <a
-          class="turn-green hover-underline current-page"
-          href="exhibitions.html"
-          >Exhibitions</a
-        >
-        <a class="turn-purple hover-underline" href="special-events.html"
-          >Special Events</a
-        >
-        <a class="turn-orange hover-underline hide-tickets" href="checkout.html"
-          >Tickets</a
-        >
-      </nav>
+        <label class="menu-icon" for="checkbox">
+          <img src="/images/logos+icons/menu-icon.svg" alt="" />
+        </label>
+        <input type="checkbox" id="checkbox" />
+        <nav>
+          <a class="turn-yellow hover-underline" href="visit.html"
+            >Visit</a
+          >
+          <a class="turn-blue hover-underline" href="explore.html">Explore</a>
+          <a class="turn-green hover-underline current-page" href="exhibitions.html"
+            >Exhibitions</a
+          >
+          <a class="turn-purple hover-underline" href="special-events.html"
+            >Special Events</a
+          >
+          <a
+            class="turn-orange hover-underline hide-tickets"
+            href="checkout.html"
+            >Tickets</a
+          >
+        </nav>
+      </div>
     </header>
 
     <!--content begins-->
@@ -53,10 +57,10 @@
         <h3>Open today</h3>
         <p>9:00 - 18:00</p>
         <div class="button-top dark-blue">Get tickets</div>
-      </a> 
+      </a>
 
       <div class="title-box-secondary">
-        <div class="coming-soon-box">
+        <div class="exhibitions-box">
           <h2>Exhibitions</h2>
         </div>
         <img src="/images/exhibitions-images/cells.svg" alt="icon of cells" />
@@ -64,49 +68,65 @@
 
       <ul class="index-of-exhibits">
         <li>
-          <a href=""
+          <a href="#cosmology-anchor"
             >Cosmology
-            <img
-              src="/images/logos+icons/arrow-skinny.svg"
-              alt="icon of arrow pointing right"
-          /></a>
+            <div class="place-arrow-middle">
+              <img
+                class="arrow-skinny"
+                src="/images/logos+icons/arrow-skinny.svg"
+                alt="icon of arrow pointing right"
+              /></div
+          ></a>
         </li>
         <li>
-          <a href=""
+          <a href="#evolution-anchor"
             >Evolution
-            <img
-              src="/images/logos+icons/arrow-skinny.svg"
-              alt="icon of arrow pointing right"
-          /></a>
+            <div class="place-arrow-middle">
+              <img
+                class="arrow-skinny"
+                src="/images/logos+icons/arrow-skinny.svg"
+                alt="icon of arrow pointing right"
+              />
+            </div>
+          </a>
         </li>
         <li>
-          <a href=""
+          <a href="#biology-anchor"
             >Biology and Medicine
-            <img
-              src="/images/logos+icons/arrow-skinny.svg"
-              alt="icon of arrow pointing right"
-          /></a>
+            <div class="place-arrow-middle">
+              <img
+                class="arrow-skinny"
+                src="/images/logos+icons/arrow-skinny.svg"
+                alt="icon of arrow pointing right"
+              /></div
+          ></a>
         </li>
         <li>
-          <a href=""
+          <a href="#robotics-anchor"
             >Robotics and AI
-            <img
-              src="/images/logos+icons/arrow-skinny.svg"
-              alt="icon of arrow pointing right"
-          /></a>
+            <div class="place-arrow-middle">
+              <img
+                class="arrow-skinny"
+                src="/images/logos+icons/arrow-skinny.svg"
+                alt="icon of arrow pointing right"
+              /></div
+          ></a>
         </li>
         <li>
-          <a href=""
+          <a href="#ecology-anchor"
             >Ecology
-            <img
-              src="/images/logos+icons/arrow-skinny.svg"
-              alt="icon of arrow pointing right"
-          /></a>
+            <div class="place-arrow-middle">
+              <img
+                class="arrow-skinny"
+                src="/images/logos+icons/arrow-skinny.svg"
+                alt="icon of arrow pointing right"
+              /></div
+          ></a>
         </li>
       </ul>
 
       <section class="exhibitions">
-        <div class="med-card">
+        <div id="cosmology-anchor" class="med-card">
           <div class="med-card-text med-green">
             <h3>Cosmology</h3>
             <p>
@@ -128,7 +148,7 @@
           />
         </div>
 
-        <div class="med-card flex-reverse">
+        <div id="evolution-anchor" class="med-card flex-reverse">
           <div class="med-card-text med-green">
             <h3>Evolution</h3>
             <p>
@@ -150,7 +170,7 @@
           />
         </div>
 
-        <div class="med-card">
+        <div id="biology-anchor" class="med-card">
           <div class="med-card-text med-green">
             <h3>Biology and Medicine</h3>
             <p>
@@ -173,7 +193,7 @@
           />
         </div>
 
-        <div class="med-card flex-reverse">
+        <div id="robotics-anchor" class="med-card flex-reverse">
           <div class="med-card-text med-green">
             <h3>Robotics and AI</h3>
             <p>
@@ -192,7 +212,7 @@
           />
         </div>
 
-        <div class="med-card">
+        <div id="ecology-anchor" class="med-card">
           <div class="med-card-text med-green">
             <h3>Ecology</h3>
             <p>

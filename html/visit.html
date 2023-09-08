@@ -18,7 +18,8 @@
   </head>
   <body>
     <header class="light-purple">
-      <a href="/index.html" class="home-link">
+      <div class="max-width">
+          <a href="/index.html" class="home-link">
         <img
           class="logo"
           src="/images/logos+icons/csm-logo.svg"
@@ -45,27 +46,30 @@
           >Tickets</a
         >
       </nav>
+      </div>
+    
     </header>
     <!--content begins-->
 
     <main class="light-yellow">
-
       <a class="open-today med-orange" href="checkout.html">
         <h3>Open today</h3>
         <p>9:00 - 18:00</p>
         <div class="button-top dark-blue">Get tickets</div>
-      </a> 
-      
+      </a>
+
       <div class="title-box-primary">
         <div class="visit-us-box">
           <h1 class="black-text">Visit Us</h1>
         </div>
         <div class="info-down">
-          <h3>Info for school field trips below</h3>
-          <img
-            src="/images/logos+icons/curved-arrow-down.svg"
-            alt="arrow pointing down"
-          />
+          <a href="#field-trip-anchor">
+            <h3>Info for school field trips below</h3>
+            <img
+              src="/images/logos+icons/curved-arrow-down.svg"
+              alt="arrow pointing down"
+            />
+          </a>
         </div>
       </div>
 
@@ -174,7 +178,9 @@
         </div>
 
         <div class="med-blue full-bar save-15">
-          <p class="centered-text">Save 15% on your purchase by booking your tickets in advance!</p>
+          <p class="centered-text">
+            Save 15% on your purchase by booking your tickets in advance!
+          </p>
           <a class="big-button dark-blue" href="checkout.html"> Buy Tickets </a>
         </div>
 
@@ -218,7 +224,7 @@
         </div>
       </section>
 
-      <div class="title-box-secondary">
+      <div id="field-trip-anchor" class="title-box-secondary">
         <div class="field-trips-box">
           <h2 class="black-text">Field Trips</h2>
         </div>

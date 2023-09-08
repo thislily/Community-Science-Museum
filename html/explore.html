@@ -18,33 +18,37 @@
   </head>
   <body>
     <header class="light-orange">
-      <a href="/index.html" class="home-link">
-        <img
-          class="logo"
-          src="/images/logos+icons/csm-logo.svg"
-          alt=" CSM Logo"
-        />
-      </a>
+      <div class="max-width">
+        <a href="/index.html" class="home-link">
+          <img
+            class="logo"
+            src="/images/logos+icons/csm-logo.svg"
+            alt=" CSM Logo"
+          />
+        </a>
 
-      <label class="menu-icon" for="checkbox">
-        <img src="/images/logos+icons/menu-icon.svg" alt="" />
-      </label>
-      <input type="checkbox" id="checkbox" />
-      <nav>
-        <a class="turn-yellow hover-underline" href="visit.html">Visit</a>
-        <a class="turn-blue hover-underline current-page" href="explore.html"
-          >Explore</a
-        >
-        <a class="turn-green hover-underline" href="exhibitions.html"
-          >Exhibitions</a
-        >
-        <a class="turn-purple hover-underline" href="special-events.html"
-          >Special Events</a
-        >
-        <a class="turn-orange hover-underline hide-tickets" href="checkout.html"
-          >Tickets</a
-        >
-      </nav>
+        <label class="menu-icon" for="checkbox">
+          <img src="/images/logos+icons/menu-icon.svg" alt="" />
+        </label>
+        <input type="checkbox" id="checkbox" />
+        <nav>
+          <a class="turn-yellow hover-underline" href="visit.html"
+            >Visit</a
+          >
+          <a class="turn-blue hover-underline current-page" href="explore.html">Explore</a>
+          <a class="turn-green hover-underline" href="exhibitions.html"
+            >Exhibitions</a
+          >
+          <a class="turn-purple hover-underline" href="special-events.html"
+            >Special Events</a
+          >
+          <a
+            class="turn-orange hover-underline hide-tickets"
+            href="checkout.html"
+            >Tickets</a
+          >
+        </nav>
+      </div>
     </header>
 
     <!--content begins-->
@@ -60,12 +64,16 @@
           <h1>For Kids</h1>
         </div>
         <div class="info-down">
-          <h3>Info for teachers, parents and researchers down at the bottom</h3>
-          <img
-            class="explore-arrow-down"
-            src="/images/logos+icons/curved-arrow-down.svg"
-            alt="arrow pointing down"
-          />
+          <a href="#for-adults-anchor">
+            <h3>
+              Info for teachers, parents and researchers down at the bottom
+            </h3>
+            <img
+              class="explore-arrow-down"
+              src="/images/logos+icons/curved-arrow-down.svg"
+              alt="arrow pointing down"
+            />
+          </a>
         </div>
       </div>
       <section class="for-kids">
@@ -166,7 +174,7 @@
         </div>
       </section>
 
-      <div class="title-box-secondary">
+      <div id="for-adults-anchor" class="title-box-secondary">
         <img src="/images/explore-images/lecture.svg" alt="icon of a teacher" />
         <div class="for-adults-box">
           <h2>For Adults</h2>
