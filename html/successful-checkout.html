@@ -32,9 +32,7 @@
         </label>
         <input type="checkbox" id="checkbox" />
         <nav>
-          <a class="turn-yellow hover-underline " href="visit.html"
-            >Visit</a
-          >
+          <a class="turn-yellow hover-underline" href="visit.html">Visit</a>
           <a class="turn-blue hover-underline" href="explore.html">Explore</a>
           <a class="turn-green hover-underline" href="exhibitions.html"
             >Exhibitions</a
@@ -64,27 +62,30 @@
           <p>
             You should receive an email with your e-tickets momentarily. If you
             do not, please contact our front desk
-            <a class="link-style" href="visit.html">here</a>.
+            <a class="link-style" href="visit.html#contact-us-anchor">here</a>.
           </p>
-          <h2>Thank you for supporting the Community Science Museum</h2>
+          <h2 class="same-as-h3">
+            Thank you for supporting the Community Science Museum
+          </h2>
         </div>
 
-        <div class="continue">
+        <a href="/index.html" class="continue">
           <img
             src="/images/logos+icons/curved-arrow-right.svg"
             alt="An arrow pointing right."
           />
-          <h3>Continue exploring</h3>
-        </div>
+          <p>Continue exploring</p>
+        </a>
       </section>
 
       <section class="join-the-squad med-purple">
-        <div>
+        <div class="join-the-squad-text">
           <h2>Ready to see something new?</h2>
           <p>
             With new exhibitions opening every month, you'll never run out of
             things to explore and discover!
           </p>
+
           <a class="button med-yellow" href="explore.html"
             >Join the Science Squad</a
           >
@@ -97,51 +98,64 @@
 
       <section class="want-more dark-blue">
         <h2>Want more? Follow us!</h2>
-        <div class="social-display">
-          <a class="social-box" href="https://www.tiktok.com/foryou">
-            <img
-              src="/images/logos+icons/tiktok-white.svg"
-              alt="tik tok logo"
-            />
-          </a>
+        <div class="social-display row wrap">
+          <div class="row">
+            <a
+              class="social-box tiktok-bg"
+              href="https://www.tiktok.com/foryou"
+            >
+              <img
+                src="/images/logos+icons/tiktok-white.svg"
+                alt="tik tok logo"
+              />
+            </a>
 
-          <a class="social-box" href="https://www.instagram.com">
-            <img
-              src="/images/logos+icons/instagram-white.svg"
-              alt="instagram logo"
-            />
-          </a>
+            <a class="social-box instagram-bg" href="https://www.instagram.com">
+              <img
+                src="/images/logos+icons/instagram-white.svg"
+                alt="instagram logo"
+              />
+            </a>
+          </div>
 
-          <a class="social-box" href="https://www.facebook.com">
-            <img
-              src="/images/logos+icons/facebook-white.svg"
-              alt="facebook logo"
-            />
-          </a>
+          <div class="row">
+            <a class="social-box facebook-bg" href="https://www.facebook.com">
+              <img
+                src="/images/logos+icons/facebook-white.svg"
+                alt="facebook logo"
+              />
+            </a>
 
-          <a class="social-box" href="https://www.youtube.com">
-            <img
-              src="/images/logos+icons/youtube-white.svg"
-              alt="youtube logo"
-            />
-          </a>
+            <a class="social-box youtube-bg" href="https://www.youtube.com">
+              <img
+                src="/images/logos+icons/youtube-white.svg"
+                alt="youtube logo"
+              />
+            </a>
+          </div>
         </div>
       </section>
 
       <section class="sign-up dark-purple">
-        <div>
-          <h2>Sign up now to get updates on future special events!</h2>
+        <div class="row">
+          <h2 class="same-as-h3">
+            Sign up now to get updates on future special events!
+          </h2>
           <img
             src="/images/index-images/computer.svg"
             alt="icon of a computer"
           />
         </div>
-        <div>
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" />
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" />
-        </div>
+        <form class="row wrap">
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+          </div>
+        </form>
 
         <a class="button med-yellow" href="checkout.html">Sign up</a>
       </section>
@@ -174,7 +188,9 @@
         <p class="small-text">Copyright Community Science Museum</p>
       </div>
 
-      <a class="med-blue contact-button" href="visit.html#contact-us-anchor">Contact us</a>
+      <a class="med-blue contact-button" href="visit.html#contact-us-anchor"
+        >Contact us</a
+      >
     </footer>
   </body>
 </html>

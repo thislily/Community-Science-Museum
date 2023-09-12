@@ -480,7 +480,7 @@ footer {
 
 /* join the squad */
 
-.go-to-field-trips{
+.go-to-field-trips {
   margin: 40px 0px;
 }
 
@@ -506,16 +506,14 @@ footer {
   color: var(--clr-black);
 }
 
-
-.go-to-field-trips p{
-margin: 20px 0px;
+.go-to-field-trips p {
+  margin: 20px 0px;
 }
 
 .join-the-squad p {
   font-size: var(--fs-body-extra);
   margin: 0px;
 }
-
 
 .go-to-field-trips img,
 .join-the-squad img {
@@ -812,9 +810,8 @@ figcaption {
   text-decoration: underline 2px solid;
 }
 
-
 #payment-options-anchor,
-#personal-info-anchor{
+#personal-info-anchor {
   padding-top: 130px;
   margin-top: -130px;
 }
@@ -962,8 +959,6 @@ figcaption {
   margin-top: 40px;
   margin-bottom: 40px;
   color: var(--clr-black);
-  text-decoration: underline;
-  -webkit-text-decoration: underline;
 }
 
 .checkout p,
@@ -1021,7 +1016,7 @@ figcaption {
   align-items: flex-start;
 }
 
-.checkout form{
+.checkout form {
   margin-bottom: 20px;
 }
 
@@ -1029,11 +1024,115 @@ figcaption {
   margin: 18px 0px 0px 0px;
 }
 
-.checkout form input{
+.checkout form input {
   width: 100%;
   border: 2px solid var(--clr-light-grey);
 }
 
+input[type="radio"] {
+  display: none;
+}
+
+.radio-box {
+  border: 2px solid var(--clr-light-grey);
+  width: 300px;
+  height: 60px;
+  padding: 0px;
+  background-color: var(--clr-white);
+  margin-bottom: 18px;
+  box-shadow: var(--bs-light-shadow);
+}
+
+.payment-options-available {
+  margin: 20px auto 40px;
+}
+
+.payment-selected {
+  border: 2px solid var(--clr-light-purple);
+  background-color: var(--clr-light-purple);
+}
+
+.radio-box:hover {
+  border: 2px solid var(--clr-light-purple);
+  background-color: var(--clr-light-purple);
+}
+
+.radio-box label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px;
+  margin: 0px;
+}
+
+.payment-icon {
+  height: 42px;
+}
+
+.radio-box p {
+  margin: 0px;
+}
+
+.selected {
+  background-color: var(--clr-river);
+}
+
+.successful-checkout{
+  margin: 0px auto;
+}
+
+.tickets-sent {
+  background-image: url(/images/checkout-images/your-tickets-blob.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 571px;
+  width: 947px;
+  margin: 60px auto 0px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow:hidden;
+}
+
+.tickets-sent p {
+  margin-top: 40px;
+  font-size: var(--fs-body-extra);
+  max-width: 75%;
+  text-align: center;
+}
+
+.tickets-sent h1,
+.tickets-sent h2 {
+  color: var(--clr-black);
+  max-width: 60%;
+  text-align: center;
+}
+
+.continue{
+  width: 325px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+  margin: -100px auto 100px;
+  padding-left: 600px;
+}
+
+.continue p{
+  font-size: var(--fs-h3);
+  font-family: var(--font-header);
+  font-weight: var(--fw-black);
+  margin: 0px 44px 0px 0px;
+}
+
+.continue img{
+  width: 71px;
+  height: 71px;
+}
 
 /* MEDIA QUERIES */
 
@@ -1047,7 +1146,7 @@ figcaption {
 @media screen and (max-width: 1220px) {
   /* universal */
 
-  p{
+  p {
     font-size: var(--fs-body-mobile);
     margin: 12px;
   }
@@ -1246,9 +1345,8 @@ figcaption {
     margin-bottom: 80px;
   }
 
- 
   #payment-options-anchor,
-  #personal-info-anchor{
+  #personal-info-anchor {
     padding-top: 102px;
     margin-top: -102px;
   }
@@ -1262,6 +1360,29 @@ figcaption {
   #for-adults-anchor {
     padding-top: 82px;
     margin-top: -82px;
+  }
+
+  .successful-checkout{
+    width: 100%;
+    margin: 0px auto;
+  }
+  
+  .tickets-sent {
+      margin: 40px 0px;
+      padding: 0px;
+      background-size: cover;
+      width: 100%;
+      height: 600px;
+  }
+  
+  .tickets-sent h1{
+      font-size: var(--fs-h1);
+  }
+  
+  
+  .continue{
+      margin-top: -40px;
+      padding: 0px;
   }
 
   /* header*/
@@ -1334,6 +1455,7 @@ figcaption {
     background-color: var(--clr-light-purple);
   }
 
+
   /* footer */
 
   .contact-button {
@@ -1380,17 +1502,14 @@ figcaption {
     margin-bottom: 20px;
   }
 
-  .go-to-field-trips-text{
+  .go-to-field-trips-text {
     gap: 0px;
   }
-
-
 
   .join-the-squad h2 {
     text-align: center;
     max-width: 350px;
   }
-
 
   .go-to-field-trips img,
   .join-the-squad img {
@@ -1557,36 +1676,35 @@ figcaption {
     font-size: var(--fs-h2);
   }
 
-  .checkout-title{
+  .tickets-sent h1{
+    font-size: var(--fs-h2);
+  }
+
+  .checkout-title {
     font-size: var(--fs-h1);
     margin: 20px;
   }
-
-
 
   .tiny-card,
   .small-card {
     padding: 6px;
   }
 
-  .checkout-card{
+  .checkout-card {
     width: 100%;
     max-width: 600px;
-    padding:18px  0px;
+    padding: 18px 0px;
   }
 
-  .checkout form{
+  .checkout form {
     width: 100%;
     max-width: 356px;
   }
 
-
-  .checkout form input{
+  .checkout form input {
     width: 100%;
     max-width: 340px;
   }
-
-  
 
   .med-card {
     flex-direction: column-reverse;
@@ -1664,6 +1782,8 @@ figcaption {
     width: auto;
   }
 
+  }
+
   /* footer */
 
   footer {
@@ -1695,12 +1815,9 @@ figcaption {
     width: 340px;
   }
 
-  .checkout form{
+  .checkout form {
     padding: 18px 0px;
   }
-
-
-
 
   .small-card,
   .tiny-card {
@@ -1708,14 +1825,12 @@ figcaption {
     max-width: 354px;
   }
 
-
-  .checkout-card{
+  .checkout-card {
     padding: 0px;
   }
-.checkout form label {
-  margin: 12px 12px 0px 0px;
-}
-
+  .checkout form label {
+    margin: 12px 12px 0px 0px;
+  }
 
   .small-card img {
     max-width: 322px;
