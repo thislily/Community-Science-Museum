@@ -1216,6 +1216,10 @@ input[type="radio"] {
     margin: 12px 0px;
   }
 
+  .tickets-sent p{
+    font-size: var(--fs-body);
+  }
+
   .address-box p {
     font-size: var(--fs-body);
   }
@@ -1323,12 +1327,7 @@ input[type="radio"] {
   }
 
   .link-style {
-    font-size: var(--fs-body);
-    margin: 12px 0px;
-  }
-
-  .tickets-sent p{
-    font-size: var(--fs-body);
+    text-decoration: underline;
   }
 
   .address {
