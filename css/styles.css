@@ -1327,6 +1327,10 @@ input[type="radio"] {
     margin: 12px 0px;
   }
 
+  .tickets-sent p{
+    font-size: var(--fs-body);
+  }
+
   .address {
     font-size: var(--fs-body);
     margin: 12px 12px 6px;
