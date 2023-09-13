@@ -676,6 +676,7 @@ footer {
 figure img,
 .med-card img,
 .big-card img {
+  min-height: 425px;
   object-fit: cover;
   width: 100%;
 }
@@ -904,6 +905,11 @@ figcaption {
   min-width: 300px;
 }
 
+.map{
+  min-height: 400px;
+  object-fit: cover;
+}
+
 /* EXHIBITIONS , SPECIAL EVENTS */
 
 .index-of-exhibits {
@@ -953,6 +959,7 @@ figcaption {
   padding-top: 20px;
   gap: 40px;
   font-family: var(--font-header);
+  overflow: hidden;
 }
 
 .checkout-title {
