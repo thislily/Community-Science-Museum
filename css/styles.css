@@ -1,7 +1,7 @@
 :root {
   --clr-white: #ffffff;
   --clr-light-grey: #e2e2e2;
-  --clr-med-grey: #878787;
+  --clr-med-grey: #757575;
   --clr-black: #000000;
   --clr-light-red: #ff8b8b;
   --clr-med-red: #e75457;
@@ -21,6 +21,7 @@
   --clr-light-purple: #d9b7e9;
   --clr-med-purple: #d57aff;
   --clr-dark-purple: #a246fa;
+  --clr-link-purple:#6D2DA8;
 
   --bs-light-shadow: 4px 6px 4px hsla(0, 0%, 0%, 0.25);
   --bs-dark-shadow: 4px 6px 4px hsla(0, 0%, 0%, 0.5);
@@ -326,7 +327,7 @@ td {
 }
 
 .link-style {
-  color: var(--clr-dark-purple);
+  color: var(--clr-link-purple);
   font-size: var(--fs-body-extra);
   font-family: var(--font-body);
   margin: 18px 0px;
@@ -540,10 +541,6 @@ footer {
   text-align: center;
 }
 
-#microscope-icon-mobile{
-  display: none;
-}
-
 .its-fun-title{
   padding: 80px 0px 0px;
   max-width: 600px
@@ -652,19 +649,19 @@ footer {
 }
 
 .tiktok-bg {
-  background-image: url(/images/index-images/tiktok-background.png);
+  background-image: url(/images/index-images/tiktok-background.jpg);
 }
 
 .instagram-bg {
-  background-image: url(/images/index-images/instagram-background.png);
+  background-image: url(/images/index-images/instagram-background.jpg);
 }
 
 .facebook-bg {
-  background-image: url(/images/index-images/facebook-background.png);
+  background-image: url(/images/index-images/facebook-background.jpg);
 }
 
 .youtube-bg {
-  background-image: url(/images/index-images/youtube-background.png);
+  background-image: url(/images/index-images/youtube-background.jpg);
 }
 
 .tiktok-bg:hover,
