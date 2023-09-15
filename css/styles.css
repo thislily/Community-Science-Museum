@@ -21,7 +21,7 @@
   --clr-light-purple: #d9b7e9;
   --clr-med-purple: #d57aff;
   --clr-dark-purple: #a246fa;
-  --clr-link-purple:#6D2DA8;
+  --clr-link-purple: #6d2da8;
 
   --bs-light-shadow: 4px 6px 4px hsla(0, 0%, 0%, 0.25);
   --bs-dark-shadow: 4px 6px 4px hsla(0, 0%, 0%, 0.5);
@@ -38,7 +38,7 @@
   --fs-h3: 32px;
   --fs-body-extra: 24px;
   --fs-body: 20px;
-  --fs-body-mobile: 16px;
+  --fs-body-mini: 16px;
 }
 
 /* UNIVERSAL*/
@@ -152,6 +152,10 @@ p,
   text-decoration: none;
 }
 
+p {
+  line-height: 150%;
+}
+
 h1,
 h2,
 .big-button {
@@ -246,7 +250,7 @@ table,
 }
 
 .small-text {
-  font-size: var(--fs-body-mobile);
+  font-size: var(--fs-body-mini);
 }
 
 .black-text {
@@ -437,10 +441,8 @@ footer {
 
 /* HOME */
 
-
-.home-grid{
-  width: 100%;
-  max-width: 1100px;
+.home-grid {
+  width: 1100px;
   margin: 40px auto;
   display: grid;
   grid-template-columns: repeat(9, 1fr);
@@ -452,81 +454,74 @@ footer {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 840px;
-  height: 380px;
   display: flex;
   justify-content: center;
   align-items: left;
   flex-direction: column;
-  grid-column: 1 / span 8 ;
+  grid-column: 1 / span 8;
   grid-row: 1 / span 3;
-  padding-bottom: 60px;
+  padding: 0px 0px 40px 120px;
 }
 
 #welcome-explorers h1,
 #welcome-explorers p {
-  max-width: 600px;
-  padding: 0px 70px;
+  max-width: 650px;
+  padding: 0px;
   color: white;
 }
 
-#welcome-explorers p{
+#welcome-explorers p {
   font-size: var(--fs-body-extra);
 }
 
-#museum-interior{
-  grid-column:  6 / span 4;
-  grid-row: 3 / span 6;
-  width: 467px;
-  height: 703px;
+#museum-interior {
+  grid-column: 6 / span 4;
+  grid-row-start: 3;
   margin: 12px 0px 0px 40px;
 }
 
-#get-15{
+#get-15 {
   grid-column: 3 / span 7;
-  grid-row: 3 / span 2;
+  grid-row: 4 / span 2;
   height: min-content;
-  margin-top: 40px;
+  margin-bottom: 80px;
   padding: 20px 40px;
   z-index: 2;
 }
 
-#get-15 span{
+#get-15 span {
   text-decoration: underline;
 }
 
-#get-15:hover{
+#get-15:hover {
   background-color: var(--clr-med-orange);
 }
 
-#museum-exterior{
+#museum-exterior {
   grid-column: 1 / span 5;
   grid-row: 4 / span 5;
-  width: 550px;
-  height: 556px;
   margin-top: 80px;
+  object-fit: cover;
 }
 
-#microscope-icon{
-  grid-column: 2 / span 4;
+#microscope-icon {
+  grid-column: 1 / span 4;
   grid-row: 10 / span 4;
 }
-
 
 #its-fun {
   background-image: url(/images/index-images/exhibits-blob.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size:contain;
-  width: 848px;
-  height: 600px;
+  background-size: contain;
+  max-width: 1087px;
+  max-height: 716px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; 
-  grid-column: 3 / span 8;
-  grid-row: 8 / span 5;
-  margin: 0px 10px 0px 0px;
+  flex-direction: column;
+  grid-column: 2 / span 8;
+  grid-row: 8 / span 6;
 }
 
 #its-fun h2,
@@ -541,23 +536,18 @@ footer {
   text-align: center;
 }
 
-.its-fun-title{
+.its-fun-title {
   padding: 80px 0px 0px;
-  max-width: 600px
+  max-width: 600px;
 }
 
-#its-fun p{
+#its-fun p {
   width: 60%;
-
 }
 
-.see-exhibits-button{
+.see-exhibits-button {
   margin: 20px 0px 0px 160px;
 }
-
-
-
-
 
 /* BANNERS */
 
@@ -887,7 +877,7 @@ figcaption {
   justify-content: end;
   text-align: end;
   width: auto;
-  max-width: 550px;
+  max-width: 600px;
 }
 
 .info-down a h3:hover {
@@ -936,6 +926,10 @@ figcaption {
   width: 448px;
   height: 228px;
   background-image: url(/images/explore-images/for-kids-blob.svg);
+}
+
+.for-kids-box h1 {
+  margin-top: 30px;
 }
 
 .address-box {
@@ -1150,9 +1144,9 @@ input[type="radio"] {
 .radio-box label {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 8px;
+  padding: 8px 18px;
   margin: 0px;
 }
 
@@ -1237,7 +1231,6 @@ input[type="radio"] {
   /* universal */
 
   p {
-    font-size: var(--fs-body-mobile);
     margin: 12px;
   }
 
@@ -1383,6 +1376,82 @@ input[type="radio"] {
   .title-box-primary {
     max-width: 820px;
   }
+
+  /* home */
+
+  .home-grid {
+    width: 800px;
+    margin: 20px auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(18, 100px);
+  }
+
+  #welcome-explorers {
+    background-image: url(/images/index-images/welcome-blob-mobile.svg);
+    align-items: left;
+    justify-content: flex-start;
+    width: 650px;
+    height: 510px;
+    grid-column: 1 / span 5;
+    grid-row: 1 / span 4;
+    padding: 80px 0px 0px 100px;
+    margin-left: 20px;
+  }
+
+  #welcome-explorers h1 {
+    text-align: center;
+    max-width: 300px;
+  }
+
+  #welcome-explorers p {
+    max-width: 450px;
+    font-size: var(--fs-body);
+  }
+
+  #get-15 {
+    grid-column: 2 / span 5;
+    grid-row: 5 / span 1;
+    padding: 20px;
+    margin: 0px;
+    margin-left: -6px;
+    text-align: center;
+  }
+
+  #museum-interior {
+    grid-column: 3 / span 4;
+    grid-row: 4 / span 5;
+    max-width: 440px;
+    margin: 50px 0px 0px 40px;
+  }
+
+  #museum-exterior {
+    grid-column: 1 / 4;
+    grid-row: 7 / span 3;
+    max-width: 480px;
+    margin-top: 50px;
+  }
+
+  #its-fun {
+    background-image: url(/images/index-images/exhibits-blob-mobile.svg);
+    width: 800px;
+    height: 636px;
+    grid-column: 1 / span 6;
+    grid-row: 11 / span 6;
+    margin-top: 80px;
+  }
+
+  .see-exhibits-button {
+    margin: 20px 0px 0px 220px;
+  }
+
+  #microscope-icon {
+    width: 220px;
+    height: 220px;
+    grid-column: 4 / span 2;
+    grid-row: 10 / span 3;
+    margin-top: 60px;
+    z-index: 1;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -1390,11 +1459,6 @@ input[type="radio"] {
 
   main {
     padding: 72px 0px 1px;
-  }
-
-  p {
-    font-size: var(--fs-body-mobile);
-    margin: 12px;
   }
 
   .checkout-table,
@@ -1409,6 +1473,10 @@ input[type="radio"] {
   .same-as-h3 {
     margin: 12px;
     font-size: var(--fs-body-extra);
+  }
+
+  .see-exhibits-button {
+    margin: 20px 0px 0px 220px;
   }
 
   .sign-up h2 {
@@ -1678,13 +1746,13 @@ input[type="radio"] {
 
   .open-today p,
   .open-today-checkout p {
-    font-size: var(--fs-body-mobile);
+    font-size: var(--fs-body-mini);
   }
 
   .button-top,
   .open-today h2,
   .open-today-checkout h2 {
-    font-size: var(--fs-body-mobile);
+    font-size: var(--fs-body-mini);
   }
 
   .button-top {
@@ -1872,31 +1940,31 @@ input[type="radio"] {
   .bigger-table td {
     width: auto;
   }
-}
 
-/* footer */
+  /* footer */
 
-footer {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: min-content;
-}
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: min-content;
+  }
 
-.socials-mini {
-  height: 50px;
-  align-items: end;
-  justify-content: center;
-}
+  .socials-mini {
+    height: 50px;
+    align-items: end;
+    justify-content: center;
+  }
 
-.contact-button {
-  width: 100%;
-  height: 60px;
-  padding: 0px;
-}
+  .contact-button {
+    width: 100%;
+    height: 60px;
+    padding: 0px;
+  }
 
-.checkout-table {
-  width: 380px;
+  .checkout-table {
+    width: 380px;
+  }
 }
 
 @media screen and (max-width: 400px) {
