@@ -2115,7 +2115,7 @@ input[type="radio"] {
   height: 282px;
   grid-column: 1 / span 3;
   grid-row-start: 8;
-  margin-left: 0px;
+  margin-left: 10px;
 }
 
 #its-fun {
