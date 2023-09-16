@@ -2104,7 +2104,8 @@ input[type="radio"] {
 #museum-interior {
   width: 217px;
   height: 326px;
-  grid-column: 3 / span 2;
+  grid-column: 3 / span 3;
+  margin-left: -20px;
   grid-row-start: 5;
 
 }
