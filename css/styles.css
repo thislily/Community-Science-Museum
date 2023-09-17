@@ -2078,9 +2078,10 @@ TABLE OF CONTENTS
   }
 
   #welcome-explorers {
+    background-image: url(/images/index-images/welcome-blob-mobile.png);
     max-width: 390px;
     margin-left: 10px;
-    padding: 0px;
+    padding: 20px;
   }
 
   #get-15 {
@@ -2151,6 +2152,10 @@ TABLE OF CONTENTS
 /* 6. smallest card adjustments */
 
 @media screen and (max-width: 400px) {
+  main{
+    overflow: hidden;
+  }
+
   .checkout-table {
     width: 360px;
   }
