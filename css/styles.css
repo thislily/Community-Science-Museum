@@ -1977,7 +1977,6 @@ TABLE OF CONTENTS
   }
 
   #welcome-explorers {
-    background-image: url(/images/index-images/welcome-blob.png);
     align-items: center;
     max-width: 500px;
     margin-left: 60px;
@@ -2020,7 +2019,6 @@ TABLE OF CONTENTS
   }
 
   #its-fun {
-    background-image: url(/images/index-images/exhibits-blob.png);
     grid-column: 1 / span 5;
     grid-row-start: 8;
     margin-top: 50px;
@@ -2080,8 +2078,6 @@ TABLE OF CONTENTS
   }
 
   #welcome-explorers {
-    background-image: url(/images/index-images/welcome-blob-mobile.png);
-    align-items: center;
     max-width: 390px;
     margin-left: 10px;
     padding: 0px;
@@ -2114,7 +2110,6 @@ TABLE OF CONTENTS
   }
 
   #its-fun {
-    background-image: url(/images/index-images/exhibits-blob.png);
     background-size: cover;
     align-items: flex-start;
     width: 100%;
